@@ -1,5 +1,4 @@
 //definindo os valores
-let valueBRL = 1.00;
 let valueEUR = 5.44;
 let valueTemp;
 //selecionando
@@ -16,10 +15,10 @@ btnConverter.addEventListener('click', function(event){
     
     if(valueSelect1.value == "BRL" && valueSelect2.value == "EUR"){
         valueTemp = Number(valueTyped.value)/valueEUR; 
-        console.log(valueTemp)
+        console.log(`Its value in reais is: ${valueTemp}`)
     } else if (valueSelect1.value  == "EUR" && valueSelect2.value  == "BRL"){
-        valueTemp = Number(valueTyped.value)/valueBRL
-        console.log(valueTemp)
+        valueTemp = Number(valueTyped.value) * valueEUR
+        console.log(`Its value in euros is: ${valueTemp}`)
     }else{
         valueTemp = "Selecione opções diferentes"
         erro.innerText = "ERRO: Selecione opções diferentes"
