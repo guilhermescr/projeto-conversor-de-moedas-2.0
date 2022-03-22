@@ -1,0 +1,49 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.conteudo .formulario{
+    background-color: #FCBF49;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    position: relative;
+    left: 42%;
+    top: 180px;
+    border: rgb(1, 248, 84) 5px outset;
+}
+
+.box1, .box2, .box3, .box4, .botao{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-items: center;
+    
+}
+
+
+h1, p{
+    margin: 10px;
+    
+}
+
+
+
+.conteudo{
+    background: black url(../imagem_de_dinheiro.jpg) center no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    justify-content: center;
+    height: 657px;
+}
+
+.botao1 {
+    margin-top: -10px;
+}
+
+p#fraseDeErro {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    text-align: center;
+}

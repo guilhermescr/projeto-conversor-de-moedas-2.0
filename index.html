@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A currency converter from dolár to real">
+    <link rel="stylesheet" href="style/src.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <main class="conteudo">
+      <section class="formulario">
+        <form >
+            <h1 class="título">Currency Converter</h1>
+            <p class="texto">Come convert your coins into our converter</p>
+            <div class="box1">
+              <label for="Valor1">From:</label>
+              <select for="Valor1" name="Valor1" class="Valor1">
+                <option value="BRL">BRL</option>
+                <option value="EUR">EUR</option>
+              </select>
+            </div>
+              
+            <div class="box2">
+              <label for="valor2">To:</label>
+              <select for="valor2" name="valor2" class="Valor2">
+                <option value="EUR">EUR</option>
+                <option value="BRL">BRL</option>
+              </select>
+            </div>  
+
+
+            <div class="box3">
+              <label for="Valor3">Amount:</label> 
+              <input id="valor3" type="text" class="Valor3" size="5" name="Valor3" placeholder="Enter an amount" value=""> 
+            </div>
+
+            <div class="box4">
+              <label for="Resultado">Result:</label> 
+              <input type="text" name="Resultado" readonly value="" class="Result">
+              <p id="fraseDeErro"></p>
+            </div>
+
+            <div class="botao">
+              <input type="submit" value="Convert" class="botao1" >
+            </div>
+          </form>
+      </section>
+  </main>
+  <script src="js/js.js"></script>
+</body>
+</html>
