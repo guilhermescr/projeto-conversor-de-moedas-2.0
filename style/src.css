@@ -1,20 +1,31 @@
 *{
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+
+html, body {
+    background: black url(../imagem_de_dinheiro.jpg) center no-repeat fixed;
+    background-size: cover;
+}
+
+.conteudo {
+    position: absolute;
+    top: 20%;
 }
 
 .conteudo .formulario{
-    background-color: #FCBF49;
+    background-color: white;
+    border: rgb(0, 255, 221) 15px outset;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
     width: 250px;
-    position: relative;
-    left: 42%;
-    top: 180px;
-    border: rgb(1, 248, 84) 5px outset;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.box1, .box2, .box3, .box4, .botao{
+.box1, .box2, .box3, .box4 {
     display: flex;
     flex-direction: column;
     margin: 10px;
@@ -22,28 +33,57 @@ padding: 0;
     
 }
 
+.botao {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 0px 10px;
+    justify-items: center;
+}
 
-h1, p{
+h1 {
+    font-size: 1.5em;
     margin: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+label {
+    color: black;
+}
+
+.conteudo{
+    width: 100%;
+    justify-content: center;
     
 }
 
+.botao1 {
+    border-radius: 10px;
+    border: rgb(133, 20, 118) 3px outset;
+    background-color: hsl(327, 95%, 45%);
+    color: white;
+    font: normal bold 1em Arial, Helvetica, Verdana, sans-serif;
+    margin-top: -15px;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-left: auto;
+    padding: 5px;
+    width: 100px;
 
-
-.conteudo{
-    background: black url(../imagem_de_dinheiro.jpg) center no-repeat fixed;
-    background-size: cover;
-    width: 100%;
-    justify-content: center;
-    height: 657px;
+    position: relative;
+    transform: translate(0%, -25%);
 }
 
-.botao1 {
-    margin-top: -10px;
+.botao1:hover {
+    background-color: hsl(327, 95%, 38%);
 }
 
 p#fraseDeErro {
-    font-family: Arial, Helvetica, sans-serif;
+    font: italic bolder 20px Arial, Helvetica, sans-serif;
     color: red;
     text-align: center;
+    padding-bottom: 10px;
 }
