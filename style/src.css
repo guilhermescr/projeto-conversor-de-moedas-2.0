@@ -9,20 +9,17 @@ html, body {
     background-size: cover;
 }
 
-.conteudo {
-    position: absolute;
-    top: 20%;
-}
-
 .conteudo .formulario{
     background-color: white;
-    border: rgb(0, 255, 221) 15px outset;
+    border: rgb(0, 255, 106) 15px outset;
     border-radius: 50px;
     display: flex;
     justify-content: center;
-    width: 250px;
-    margin-right: auto;
-    margin-left: auto;
+    font-size: 20px;
+
+    width: 350px;
+    margin: 12vh auto 0 auto;
+    padding: 0px 10px;
 }
 
 .box1, .box2, .box3, .box4 {
@@ -41,12 +38,13 @@ html, body {
 }
 
 h1 {
+    text-align: center;
     font-size: 1.5em;
     margin: 10px;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 10px;
 }
 
@@ -60,17 +58,21 @@ label {
     
 }
 
+.botao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .botao1 {
     border-radius: 10px;
     border: rgb(133, 20, 118) 3px outset;
-    background-color: hsl(327, 95%, 45%);
+    background-color: hsl(298, 100%, 55%);
     color: white;
     font: normal bold 1em Arial, Helvetica, Verdana, sans-serif;
-    margin-top: -15px;
-    margin-right: auto;
-    margin-bottom: 5px;
-    margin-left: auto;
     padding: 5px;
+    margin: -20px 20px 0px 50px;
     width: 100px;
 
     position: relative;
@@ -79,6 +81,26 @@ label {
 
 .botao1:hover {
     background-color: hsl(327, 95%, 38%);
+    transition-duration: 0.3s;
+}
+
+.botao2 {
+    border-radius: 10px;
+    border: rgb(133, 20, 118) 3px outset;
+    background-color: hsl(298, 100%, 55%);
+    color: white;
+    font: normal bold 1em Arial, Helvetica, Verdana, sans-serif;
+    padding: 5px;
+    margin: -20px 50px 0px 20px;
+    width: 100px;
+
+    position: relative;
+    transform: translate(0%, -25%);
+}
+
+.botao2:hover {
+    background-color: hsl(327, 95%, 38%);
+    transition-duration: 0.3s;
 }
 
 p#fraseDeErro {
